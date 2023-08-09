@@ -11,17 +11,17 @@ public class mainCalculator {
         // == INICIO DEL PROGRAMA ==
         int counter = 0; // Contador para contar veces que corre la clase
 
+
         // aca un WHILE. ( cuando me corra el prog )
 
-        System.out.print("Enter first number- "); // Input Primer numero
+        System.out.print("Entrar primer numero: "); // Input Primer numero
         int a= sc.nextInt();
 
-        System.out.print("Enter second number- "); // Input Segundo numero
-        int b= sc.nextInt();
-
-        System.out.print("operacion (+, -, *, /): "); // Input caracter
-
+        System.out.print("operacion (+, -, *, /): "); // Input operacion
         char operacion = sc.next().charAt(0); // variable char para input character. toma el primer caracter del input.
+
+        System.out.print("Entrar segundo numero: "); // Input Segundo numero
+        int b= sc.nextInt();
 
         int result = 0; // Valor inicial de resultado para modificar luego
 
@@ -48,6 +48,8 @@ public class mainCalculator {
         }
 
 
+        System.out.println("Total = " + result ); // Normal
+
         // POSIBLES RESULTADOS ::
 
         if ( result < 0 ) {
@@ -57,7 +59,7 @@ public class mainCalculator {
         if ( result > 1000) {
             System.out.println("El resultado es un número grande"); // Numero grande
 
-        System.out.println("Total= " + result ); // Normal
+
 
         // Suma al contador de while
 
