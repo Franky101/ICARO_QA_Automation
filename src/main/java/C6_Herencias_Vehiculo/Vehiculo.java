@@ -28,7 +28,6 @@ public class Vehiculo {
     public void frenar() {
         System.out.println("El Vehiculo frena\n");
     }
-
 }
 
 
