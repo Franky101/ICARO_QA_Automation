@@ -1,4 +1,4 @@
-package calculator1;
+package Calculadora;
 
 public class Calculator {
     public static int suma(int a, int b) {

@@ -1,4 +1,4 @@
-package Vehicle;
+package C6_Herencias_Vehiculo;
 
 public class Coche extends Vehiculo {
 
