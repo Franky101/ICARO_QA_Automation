@@ -1,7 +1,7 @@
 package calculator1;
 import java.util.Scanner;
 
-public class mainCalculator {
+public class MainCalculator {
     public static void main(String[] args) {
 
         // == OBJETOS ==
