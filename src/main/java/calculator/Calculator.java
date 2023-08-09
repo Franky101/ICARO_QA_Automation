@@ -15,6 +15,7 @@ public class Calculator {
             return (int) a / b;
         } else {
             System.out.println("Cannot divide by zero.");
+            return 0;
         }
     }
 }

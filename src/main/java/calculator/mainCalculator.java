@@ -48,7 +48,7 @@ public class mainCalculator {
         }
 
 
-        // POSIBLE RESULTADOS ::
+        // POSIBLES RESULTADOS ::
 
         if ( result < 0 ) {
             System.out.println("El resultado es negativo, tene cuidado!"); // Numero negativo
