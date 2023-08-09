@@ -9,65 +9,62 @@ public class mainCalculator {
         Calculator cal= new Calculator(); // Crea objeto para la calculadora
 
         // == INICIO DEL PROGRAMA ==
-        int counter = 0; // Contador para contar veces que corre la clase
+        int i = 1; // Contador para contar veces que corre la clase
+        while (i <= 5) {
+
+            System.out.print("Entrar primer numero: "); // Input Primer numero
+            int a= sc.nextInt();
+
+            System.out.print("Entrar segundo numero: "); // Input Segundo numero
+            int b= sc.nextInt();
+
+            System.out.print("operacion (+, -, *, /): "); // Input operacion
+            char operacion = sc.next().charAt(0); // variable char para input character. toma el primer caracter del input.
 
 
-        // aca un WHILE. ( cuando me corra el prog )
+            int result = 0; // Valor inicial de resultado para modificar luego
 
-        System.out.print("Entrar primer numero: "); // Input Primer numero
-        int a= sc.nextInt();
-
-        System.out.print("operacion (+, -, *, /): "); // Input operacion
-        char operacion = sc.next().charAt(0); // variable char para input character. toma el primer caracter del input.
-
-        System.out.print("Entrar segundo numero: "); // Input Segundo numero
-        int b= sc.nextInt();
-
-        int result = 0; // Valor inicial de resultado para modificar luego
-
-        switch (operacion) {
-            // Suma
-            case '+':
-                result = cal.suma(a, b);
-                break;
-            // Resta
-            case '-':
-                result = cal.resta(a, b);
-                break;
-            // Multiplicacion
-            case '*':
-                result = cal.multiplicacion(a, b);
-                break;
-            // Division
-            case '/':
-                result = cal.division(a, b);
-                break;
-            // No es un caracter valido
-            default:
-                System.out.println("Caracter Invalido.");
-        }
+            switch (operacion) {
+                // Suma
+                case '+':
+                    result = cal.suma(a, b);
+                    break;
+                // Resta
+                case '-':
+                    result = cal.resta(a, b);
+                    break;
+                // Multiplicacion
+                case '*':
+                    result = cal.multiplicacion(a, b);
+                    break;
+                // Division
+                case '/':
+                    result = cal.division(a, b);
+                    break;
+                // No es un caracter valido
+                default:
+                    System.out.println("Caracter Invalido.");
+            }
 
 
-        System.out.println("Total = " + result ); // Normal
+            // :: POSIBLES RESULTADOS ::
 
-        // POSIBLES RESULTADOS ::
+            if ( result < 0 ) {
+                System.out.println("El resultado es negativo, tene cuidado!"); // Numero negativo
+            } else if ( result > 1000) {
+                System.out.println("El resultado es un número grande"); // Numero grande
+            } else {
+                System.out.println("Total = " + result ); // Normal
+            }
+            // Suma al contador de while
 
-        if ( result < 0 ) {
-            System.out.println("El resultado es negativo, tene cuidado!"); // Numero negativo
-        }
 
-        if ( result > 1000) {
-            System.out.println("El resultado es un número grande"); // Numero grande
-
-
-
-        // Suma al contador de while
-
+            System.out.println(" ");
+            System.out.println("*********************************");
+            System.out.println("El programa a corrido: " + i + " veces.");
+            System.out.println("*********************************");
+            i++;
         }
         sc.close();
     }
-
-
-
-
 }
